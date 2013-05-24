@@ -3,8 +3,6 @@
 using namespace std;
 
 
-const int numCities = 4;
-
 void convertFact(unsigned long long, int*);
 void orderPermutation(int*, unsigned long long, int);
 unsigned long long factorial(unsigned long long);
@@ -24,10 +22,6 @@ int main()
 	{
 		//system("PAUSE");
 		int* nums = new int[numCities];
-	for(int q = 0; q < factorial(numCities); q++)
-	{
-		//system("PAUSE");
-		int nums[numCities];
 		for(int t = 0; t < numCities; t++)
 		{
 			nums[t] = t;
@@ -41,7 +35,6 @@ int main()
 		}
 		cout << "0\t\t";
 		orderPermutation(nums,totPaths / numCores * q,numCities);
-		orderPermutation(nums,q,numCities);
 		for(int z = 0; z < numCities; z++)
 		{
 			cout << nums[z] << ",";
