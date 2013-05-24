@@ -2,6 +2,10 @@
 
 using namespace std;
 
+<<<<<<< HEAD
+=======
+const int numCities = 4;
+>>>>>>> 508d87361e50f1e791b6781cc91983be9e0f491b
 
 void convertFact(unsigned long long, int*);
 void orderPermutation(int*, unsigned long long, int);
@@ -9,6 +13,7 @@ unsigned long long factorial(unsigned long long);
 
 int main()
 {
+<<<<<<< HEAD
 	int numCities;
 	int numCores;
 
@@ -22,6 +27,12 @@ int main()
 	{
 		//system("PAUSE");
 		int* nums = new int[numCities];
+=======
+	for(int q = 0; q < factorial(numCities); q++)
+	{
+		//system("PAUSE");
+		int nums[numCities];
+>>>>>>> 508d87361e50f1e791b6781cc91983be9e0f491b
 		for(int t = 0; t < numCities; t++)
 		{
 			nums[t] = t;
@@ -34,13 +45,20 @@ int main()
 			cout << digits[y] << ",";
 		}
 		cout << "0\t\t";
+<<<<<<< HEAD
 		orderPermutation(nums,totPaths / numCores * q,numCities);
+=======
+		orderPermutation(nums,q,numCities);
+>>>>>>> 508d87361e50f1e791b6781cc91983be9e0f491b
 		for(int z = 0; z < numCities; z++)
 		{
 			cout << nums[z] << ",";
 		}
 		cout << "\b " << endl;
+<<<<<<< HEAD
 		delete [] nums;
+=======
+>>>>>>> 508d87361e50f1e791b6781cc91983be9e0f491b
 	}
 }
 
