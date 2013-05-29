@@ -6,8 +6,8 @@
 #include<stdlib.h>
 #include <omp.h>
 #include<time.h>
-//#include<sys/time.h> // Used for timing this.
-//#include<unistd.h> // Used for timing this.
+#include<sys/time.h> // Used for timing this.
+#include<unistd.h> // Used for timing this.
 #include<algorithm>//needed for next_permutation
 #include<climits>//needed for MAX_INT
 const int MAX_PATH = 1000;//the highest cost of a path in the graph
