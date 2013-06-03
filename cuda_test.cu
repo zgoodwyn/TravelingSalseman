@@ -1,7 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<cuda.h>
-#include<cuda_runtime.h>//tehnically unnecessary
 
 //indexes "threadIdx.x" elements into the array, adds threadId.x to it (effectively doubling it), then adding 1
 __global__ void multiGo(float* arr)
