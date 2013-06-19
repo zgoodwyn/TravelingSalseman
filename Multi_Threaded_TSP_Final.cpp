@@ -193,7 +193,7 @@ int main(int argc, char* argv[])
 
 	double section_Ratio = double(1)/num_Threads;
 
-	long long* perm_Start_Indecies = new long long[num_Threads];
+	long long* perm_Start_Indecies = new long long[num_Threads + 1];
 
 	for(int index = 0; index < num_Threads +1; index++)
 	{
